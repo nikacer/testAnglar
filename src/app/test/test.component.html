@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>url</th>
+        <th>path</th>
+    </tr>
+
+    <tr *ngFor="let pokemon of pokemones; let i = index">
+        <td>{{ pokemon.name }}</td>
+        <td>{{ pokemon.url}}</td>
+        <td><a [routerLink]="['/pokemon', i + 1]"> acceder</a></td>
+    </tr>
+</table>

@@ -1,0 +1,11 @@
+<form [formGroup]="pokemonForm" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="nombre" name="nombre" formControlName="nombre">
+    <input type="number" placeholder="peso" name="peso" formControlName="peso">
+    <select name="familia" formControlName="familia">
+        <option value="bajitos">bajo</option>
+        <option value="medianos">mediano</option>
+        <option value="grandes">alto</option>
+    </select>
+
+    <input type="submit" value="enviar">
+</form>

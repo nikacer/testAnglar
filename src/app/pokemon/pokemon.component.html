@@ -1,0 +1,9 @@
+<div *ngIf="pokemon; else elseBlock">
+    <h1>{{pokemon.name}}</h1>
+    <ul>
+        <li><img [src]="pokemon.sprites.front_default" alt=""></li>
+        <li><img [src]="pokemon.sprites.back_default" alt=""></li>
+    </ul>
+</div>
+
+<ng-template #elseBlock>Content to render when condition is false.</ng-template>
