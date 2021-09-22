@@ -22,7 +22,7 @@ export class AgregarPokemonComponent implements OnInit {
 
   onSubmit() {
     if (this.pokemonForm.valid) {
-      this.http.post('http://localhost:5000/pokemon/agregar', this.pokemonForm.value).subscribe(console.log)
+      this.http.post('http://localhost:3200/pokemon/agregar', this.pokemonForm.value).subscribe(console.log)
     }
   }
 
